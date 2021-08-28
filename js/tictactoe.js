@@ -22,11 +22,11 @@ let activePlayer = "X";
         if (activePlayer === "X") 
         {
             //If activePlayer is equal to "X", the X.png is placed in HTML.
-            select.style.backgroundImage = 'url("images/X_Symbol.png")';
+            select.style.backgroundImage = 'url("images/X.png")';
             //Active player may only be "X" or "O" so, if not "X" it must be "O".
         }else {
             //if activePlayer is equal to "O", the O.png is placed in HTML.
-            select.style.backgroundImage = 'url("images/O_Symbol.png")';
+            select.style.backgroundImage = 'url("images/O.png")';
         }
         //squareNumber and activePlayer are concatenated together and added to array
         selectedSquares.push(squareNumber + activePlayer);
@@ -123,7 +123,7 @@ let activePlayer = "X";
      else if (selectedSquares.length >= 9)
      {
         //This functoini plays the tie game sound.
-        audio('./media/Tie_Game_Sound.mp3');
+        audio("./media/Alt_Tie_Sound.mp3");
         //This function sets a .3 second timer before the resetGame is called.
         setTimeout(function () { resetGame(); }, 1000);
      }
@@ -234,7 +234,7 @@ let activePlayer = "X";
         //This line disallows clicking while the win sound is playing.
         disableClick();
         //This line plays the win sounds.
-        audio('./media/Win_Game_Sound.mp3');
+        audio('./media/Alt_Win_Sound.mp3');
         //This line calls out main animation loop.
         animateLineDrawing();
         //This line waits 1 second. Then, clears canvas, resets game
