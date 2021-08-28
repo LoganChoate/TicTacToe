@@ -16,7 +16,7 @@ let activePlayer = "X";
       */
      if (!selectedSquares.some(element => element.includes(squareNumber)))
      {
-        //this variuable retrieves the html element id that was clicked.
+        //this variable retrieves the html element id that was clicked.
         let select = document.getElementById(squareNumber);
         //this condition checks who's turn it is.
         if (activePlayer === "X") 
