@@ -23,7 +23,7 @@ let activePlayer = "X";
         {
             //If activePlayer is equal to "X", the X.png is placed in HTML.
             select.style.backgroundImage = 'url("images/X_Symbol.png")';
-            //Active player ma only be "X" or "O" so, if not "X" it must be "O".
+            //Active player may only be "X" or "O" so, if not "X" it must be "O".
         }else {
             //if activePlayer is equal to "O", the O.png is placed in HTML.
             select.style.backgroundImage = 'url("images/O_Symbol.png")';
