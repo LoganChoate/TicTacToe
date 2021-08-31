@@ -138,7 +138,7 @@ let activePlayer = "X";
         const c = selectedSquares.includes(squareC)
         //If the 3 variable we pass are all included in our array trus is 
         //returned and our else if condition executes the drawLine function.
-        if(a === tru && b === true && c === true) { return true }
+        if(a === true && b === true && c === true) { return true }
      }
  }
 
