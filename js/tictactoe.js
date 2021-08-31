@@ -31,7 +31,7 @@ let activePlayer = "X";
         //squareNumber and activePlayer are concatenated together and added to array
         selectedSquares.push(squareNumber + activePlayer);
         //this calls a function to check for any win conditions.
-        chackWinConditions();
+        checkWinConditions();
         //this condition is for changing the active player.
         if (activePlayer === "X")
         {
