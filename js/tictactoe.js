@@ -178,7 +178,7 @@ let activePlayer = "X";
             //This variable stores temporary x axis data we update in our animation loop.
             x =x1,
             //This variable stores temporary y axis data we update in our animation loop.
-            y = y1,
+            y = y1;
             
             
 
