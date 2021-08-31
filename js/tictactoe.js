@@ -2,7 +2,7 @@
 let activePlayer = "X";
 /**this  array stores an array of moves.
  We use this to determine win conditions.*/
- let selectSquares = [];
+ let selectedSquares = [];
 
  /**
   * this function is for placing an X or O n a square
