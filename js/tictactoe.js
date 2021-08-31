@@ -213,7 +213,7 @@ let activePlayer = "X";
                 if (x >= x2 && y >= y2) { cancelAnimationFrame(animationLoop); }
             }
             //This condition is similar to the one above.
-            //This is necessary for the 6, 4, 21, win condition
+            //This is necessary for the 6, 4, 2, win condition
             if (x1 <= x2 && y1 >= y2) {
                 if (x < x2) {x += 10;}
                 if (y > y2) {y -= 10;}
