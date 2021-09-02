@@ -133,9 +133,9 @@ let activePlayer = "X";
      function arrayIncludes(squareA, squareB, squareC)
      {
         //These 3 variables will be used to check for 3 in a row.
-        const a = selectedSquares.includes(squareA)
-        const b = selectedSquares.includes(squareB)
-        const c = selectedSquares.includes(squareC)
+        const a = selectedSquares.includes(squareA);
+        const b = selectedSquares.includes(squareB);
+        const c = selectedSquares.includes(squareC);
         //If the 3 variable we pass are all included in our array trus is 
         //returned and our else if condition executes the drawLine function.
         if(a === true && b === true && c === true) { return true }
@@ -188,13 +188,13 @@ let activePlayer = "X";
             //This variable creates a loop.
             const animationLoop = requestAnimationFrame(animateLineDrawing);
             //This mehtod clears content from last loop iteration.
-            c.clearRect(0, 0, 608, 608)
+            c.clearRect(0, 0, 608, 608);
             //This method starts a new path
             c.beginPath();
             //This method moves us to a starting point for our line.
-            c.moveTo(x1, y1)
+            c.moveTo(x1, y1);
             //This method indicates the end point in our line.
-            c.lineTo(x, y)
+            c.lineTo(x, y);
             //This method sets the width of our line.
             c.lineWidth = 10;
             //This method sets the color of our line.
